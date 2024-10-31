@@ -8,6 +8,12 @@ body{
     background-color: black;
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
 img{
     height: 10rem;
 }
