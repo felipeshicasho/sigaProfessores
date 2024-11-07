@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGA-ME</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <nav>
+      <section class="nav__main">
+        <section class="nav__img">
+          <img src="assets/tres-linhas.png" class="img__aside" alt="" />
+          <img src="assets/sigame.png" class="img__sigame" alt="" />
+        </section>
+
+        <section>
+          <h1>Faculdade de Tecnologia de Presidente</h1>
+          <h1>Curso: Tecnologia em Análise e Desenvolvimento de Sistemas</h1>
+        </section>
+
+        <h1><a href="login.html"> - SAIR - </a></h1>
+      </section>
+    </nav>
+
+    <main>
+      <aside>
+        <ul>
+          <li class="li__principal">
+            ALUNO:
+            <ul>
+              <li class="li__link"><a href="">Adicionar Aluno</a></li>
+              <li class="li__link"><a href="">Modificar Aluno</a></li>
+              <li class="li__link"><a href="">Visualizar Aluno</a></li>
+            </ul>
+          </li>
+          <li class="li__principal">
+            MATÉRIA:
+            <ul>
+              <li class="li__link"><a href="">Adicionar Matérias</a></li>
+              <li class="li__link"><a href="">Remover Matérias</a></li>
+              <li class="li__link"><a href="">Visualizar Matérias</a></li>
+            </ul>
+          </li>
+          <li class="li__principal">
+            NOTA:
+            <ul>
+              <li class="li__link"><a href="">Adicionar Nota</a></li>
+              <li class="li__link"><a href="">Modificar Nota</a></li>
+              <li class="li__link"><a href="">Visualizar Nota</a></li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+      <section></section>
+    </main>
+
+    <script>
+      document.querySelectorAll(".li__principal").forEach((item) => {
+        item.addEventListener("click", () => {
+          // Alterna a classe "active" para exibir/esconder a sublista
+          item.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
