@@ -1,82 +1,88 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav__main{
-    padding: 10px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid black;
+.nav__main {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
 }
 
-.img__aside{
-    height: 30px;
+.img__aside {
+  height: 30px;
 }
 
-.img__aside:hover{
-    cursor: pointer;
+.img__aside:hover {
+  cursor: pointer;
 }
 
-.img__sigame{
-    height: 90px;
+.img__sigame {
+  height: 90px;
 }
 
-.nav__img{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.nav__img {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-main{
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-}
-
-main section{
-    background-color: yellow;
+main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .li__principal {
-    border: 1px solid black;
-    padding: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    position: relative;
+  border: 1px solid black;
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
 }
 
 .li__principal ul {
-    display: none;
-    padding: 10px 0px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease; /* Animação suave */
+    padding: 0 10px;
+
 }
 
 .li__principal::after {
-    content: ' ▼';
-    font-size: 12px;
-    position: absolute;
-    right: 0;
+  content: "▼ ";
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
 }
 
 .li__principal.active ul {
-    display: block;
+    max-height: 200px; /* Defina um valor grande o suficiente para conter o conteúdo */
 }
 
 .li__principal.active::after {
-    content: ' ▲';
+  content: " ▲";
 }
 
-.li__link{
-    margin: 10px 0px;
+.li__link {
+  margin: 10px 0px;
 }
 
+.li__button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
 
-.li__link a{
-    
+.li__icon{
+    height: 30px;
 }
