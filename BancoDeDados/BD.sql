@@ -31,8 +31,9 @@ CREATE TABLE IF NOT EXISTS Materiais (
   REFERENCES Professores(pk_professor_cpf)
 );
 
+/*
 CREATE TABLE IF NOT EXISTS Aulas (
-  pk_aula_id INT NOT NULL AUTO_INCREMENT,
+  #pk_aula_id INT NOT NULL AUTO_INCREMENT,
   data_horario DATETIME NOT NULL,
   fk_professor_cpf VARCHAR(14) NOT NULL,
   fk_material_id INT NOT NULL,
@@ -52,6 +53,7 @@ CREATE TABLE IF NOT EXISTS Alunos_Aulas (
   CONSTRAINT fk_alunos_aulas_aula FOREIGN KEY (fk_aula_id) 
   REFERENCES Aulas(pk_aula_id)
 );
+*/
 
 CREATE TABLE IF NOT EXISTS Notas (
   pk_nota_id INT NOT NULL AUTO_INCREMENT,
