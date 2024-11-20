@@ -42,7 +42,7 @@ ul {
 
 .li__principal {
   border: 1px solid black;
-  padding: 20px;
+  padding: 28px 20px;
   cursor: pointer;
   font-weight: bold;
   position: relative;
